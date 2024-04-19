@@ -70,5 +70,5 @@ rad=!rad;
 if (rad){
   button.textContent = "Одинаковая угловая скорость";
 } else{
-  button.textContent = "Одинаковая линйная скорость";
+  button.textContent = "Одинаковая линейная скорость";
 } }

@@ -8,11 +8,11 @@
 
 <body onload="init()">
     <script src="../script/grfic.js"></script>
-    <p>В графике: по оси Y - x, метры;  по оси X - T, секунды;</p>
+    <p>В графике: по оси абцисс - T, секунды; по оси ординат - x, метры;  </p>
     <canvas id="canvas" width="960" height="400"></canvas>
     <code style="clear: both;">амплитуда </code> <input type="range" id="timeScale" min="10" max="150"
         value="100" oninput="setTimeScale(this.value)">
-        <code>период</code> <input type="range" id="timeScaleA" min="10" max="200"
+        <code>период</code> <input type="range" id="timeScaleA" min="10" max="150"
         value="100" oninput="setTimeScaleFRE(this.value)">
         <button onclick="showAmp=!showAmp">отключить амплитуду</button>
         <button onclick="showFre=!showFre">отключить период</button>
