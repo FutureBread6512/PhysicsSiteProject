@@ -1,0 +1,44 @@
+body {
+	font-family: sans-serif;
+}
+:root {
+	--color-1: #4B2D73;
+	--color-2: #343477;
+	--color-3: #2A506D;
+	--color-4: #AA8E39;
+  }
+h1{
+  font-size: 212px;
+  font-weight: 100vw;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+ margin: auto;
+  text-transform: uppercase;
+  text-align: left;
+ background: linear-gradient(219deg, 
+    var(--color-1) 20%, 
+    transparent 20%,transparent 21%, 
+    var(--color-2) 21%, var(--color-2)  40%,
+    transparent 40%,transparent 41%, 
+    var(--color-3) 41%,var(--color-3) 60% ,
+    transparent 60%,transparent 61%, 
+    var(--color-4) 61%, var(--color-4) 80%,
+    transparent 80%, transparent 81%, 
+    var(--color-1) 81%);
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+}
+li{
+	list-style-type: none;
+	margin: 10px 10% 10px 10%;
+	padding: 20px;
+	font-size: 18px;
+	
+}
+h2{
+		font-size: 28px;
+}
+a{text-decoration: none;}

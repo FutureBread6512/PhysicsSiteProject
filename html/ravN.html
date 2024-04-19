@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
+  
+  <title>Document</title>
+  <link href="../styles/elements.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="init();">
+<script src="../script/ravN.js"></script>
+      <canvas id="testCanvas" width="960" height="400"></canvas>
+      <div>
+        <code>v = <b id="timeScaleFld">1.0 м/с</b></code> <input type="range" id="timeScale" min="10" max="200"
+        value="100" oninput="setTimeScale(this.value/100)">
+       <div>
+
+      <h2>Равномерное прямолинейное движение </h2>
+      <div>
+        <p>Формула пути</p>
+        <b>S=v*t</b>
+      </div>
+      <div>
+        <p>Измение координаты при равномерном движении</p>
+        <b>x=x0+v*t</b>
+        <p>x0 - начальная координата</p>
+        <p>x - конечная координата</p>
+      </div>
+    </div>
+
+
+</body>
+
+</html>

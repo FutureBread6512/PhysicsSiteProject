@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #1C053A;
+    text-align: justify;
+  }
+  canvas {
+    width: 50vw;
+    height: 20vw;
+    border: 2px solid;
+    display: block;
+    margin-left: 20vw;
+  }
+  p{
+    color: #1C053A;
+    padding: 10px;
+  }

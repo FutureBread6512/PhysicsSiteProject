@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sine Wave</title>
+    <link href="../styles/elements.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="init()">
+  <script src="../script/refraction.js"></script>
+    <canvas id="canvas" width="960" height="400"></canvas>
+    <code style="clear: both;">угол </code> <input type="range" id="timeScale" min="0" max="90"
+        oninput="setTimeScale(this.value)">
+        <button onclick="showAmp=!showAmp">скрыть угол падения</button>
+        <button onclick="showFre=!showFre">скрыть угол преломления</button>
+        <div style="padding: 10px;">
+          <p>Закон преломления света (закон Снеллиуса):  Отношение синуса угла падения α к синусу угла преломления β есть величина, постоянная для двух данных сред, и определяется выражением:
+
+            <p>sin(α)/sin(β) = n<sub>12</sub></p>
+           </p><p>Постоянную величину n<sub>12</sub> называют относительным показателем преломления второй среды относительно первой. Показатель преломления среды относительно вакуума называют абсолютным показателем преломления.
+<p>При переходе в более плотную среду угол преломления меньше, чем угол падения. И наоборот: при переходе в менее плотную среду угол преломления больше, чем угол падения</p>            
+</p>
+        </div>
+
+</body>
+
+</html>

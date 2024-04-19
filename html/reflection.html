@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sine Wave</title>
+    
+<link href="../styles/elements.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="init()">
+<script src="../script/reflection.js"></script>
+    <canvas id="canvas" width="960" height="400"></canvas>
+    <code style="clear: both;">угол </code> <input type="range" id="timeScale" min="0" max="90"
+        oninput="setTimeScale(this.value)">
+        <button onclick="showAmp=!showAmp">скрыть угол падения</button>
+        <button onclick="showFre=!showFre">скрыть угол отражения</button>
+    <div style="padding: 10px;">
+      <p>Закон отражения света: падающий и отраженный лучи, а также перпендикуляр к границе раздела двух сред, восстановленный в точке падения луча, лежат в одной плоскости (плоскость падения). Угол отражения γ равен углу падения α. Заметьте, что все углы в оптике измеряются от перпендикуляра к границе раздела двух сред.</p>
+    </div>
+
+</body>
+
+</html>

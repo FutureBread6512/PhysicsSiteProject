@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>mg</title>
+    <link href="../styles/elements.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <script src="../script/angle.js"></script>
+    <h2> Движение под углом к горизонту </h2>
+    <canvas id="canvasGraph" width="960" height="400">></canvas>
+	<div>
+        Траектория:
+        <font color="#000000" size="5"><B>—</B></font>
+		<input type="checkbox" id="checkbox_01" name="" onchange="app.setCheckbox_01(this.checked);" checked/>актуальная,
+		<font color="CCCCCC" size="5"><B>—</B></font>
+		<input type="checkbox" id="checkbox_02" name="" onchange="app.setCheckbox_02(this.checked);" checked/>оптимальная (<I>α</I> = 45˚)
+    </div>	
+
+    <div>
+		Угол броска:
+        <font>
+        <code>α = <b id="timeScaleFld">40°</b></code> 
+		<input type="range" min="0" max="90" id="Slider_01" style="width: 100px;" oninput="app.set_01(this.value); setTimeScale(this.value);">
+		</font>
+	</div>
+
+
+<div>
+        <p>При броске к горизонту обьект перемещается:</p>
+ <p>По оси X (горизонталь): равномерно</p>
+ <b>S = v*t</b>
+ <p>По оси Y (вертикаль): равноускоренно</p>
+ <b>S = <b>S = t*a<sup>2</sup>/2</b></b>
+<p>Усореннием чаще всего является <b>g</b> - ускорение свободного падения Земли. g≈10м/с<sup>2</sup></p>
+      </div>
+    
+	<script type="text/javascript">var app = new MainMG(
+		document.getElementById('canvasGraph')
+	);</script>
+  
+
+</body>
+</html>
