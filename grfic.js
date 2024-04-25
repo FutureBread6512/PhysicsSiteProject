@@ -58,7 +58,7 @@ let showFre = true;
         let frequency = varfre;
             
         while (x < canvas.width) {
-            y = (canvas.height / 2) + amplitude * Math.sin(x / frequency)+Math.PI/2;
+            y = (canvas.height / 2) + amplitude * Math.cos(x / frequency);
             
             ctx.lineTo(x, y);
             x += 1;
