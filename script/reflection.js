@@ -38,7 +38,7 @@ var showFre = true;
         }
         
         if (showFre){
-        ctx.fillText("β = "+ angleA +" °", width/2+R*2, canvas.height/2-R);
+        ctx.fillText("α = "+ angleA +" °", width/2+R*2, canvas.height/2-R);
         }
         ctx.stroke();
         
@@ -77,8 +77,6 @@ var showFre = true;
         ctx.save();
         ctx.restore();
 
-        ctx.moveTo(width/2, height/2);
-        ctx.arc(width/2, height/2, R , Math.PI/2*3, (90 + Number(angleA)) * Math.PI/180+Math.PI);
         ctx.moveTo(width/2, height/2);
         ctx.arc(width/2, height/2, R-10 , Math.PI/2*3, (90 + Number(angleA)) * Math.PI/180+Math.PI);
         ctx.stroke();
