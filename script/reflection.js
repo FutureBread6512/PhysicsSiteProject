@@ -1,15 +1,15 @@
-var angleA = 20
-var valb = angleA
-var varfre = 20
-var pointLen = 0
-var R = 30
+let angleA = 20
+let valb = angleA
+let varfre = 20
+let pointLen = 0
+let R = 30
 
-var showAmp = true
-var showFre = true
+let showAmp = true
+let showFre = true
 function showAxes(ctx, axes) {
-    var width = ctx.canvas.width
-    var height = ctx.canvas.height
-    var xMin = 0
+    let width = ctx.canvas.width
+    let height = ctx.canvas.height
+    let xMin = 0
 
     ctx.beginPath()
     ctx.lineWidth = 2
@@ -42,19 +42,17 @@ function showAxes(ctx, axes) {
     ctx.stroke()
 
 }
-function plotSine(ctx, xOffset, yOffset) {
-    var width = ctx.canvas.width
-    var height = ctx.canvas.height
-    var scale = 0
-    var x = 0
-    var y = 0
+function plotSine(ctx) {
+    let width = ctx.canvas.width
+    let height = ctx.canvas.height
+    let scale = 0
+    let x = 0
+    let y = 0
 
 
     ctx.beginPath()
     ctx.lineWidth = 2
     ctx.strokeStyle = "rgb(66,44,255)"
-
-    //before ref
 
     ctx.moveTo(width / 2, height / 2)
     ctx.lineTo(width / 2 - Math.tan((angleA) * Math.PI / 180) * height / 2, 0)
@@ -85,20 +83,18 @@ function plotSine(ctx, xOffset, yOffset) {
 }
 
 function draw() {
-    var canvas = document.getElementById("canvas")
-    var context = canvas.getContext("2d")
+    let canvas = document.getElementById("canvas")
+    let context = canvas.getContext("2d")
 
     context.clearRect(0, 0, 960, 960)
     showAxes(context)
     context.save()
 
-    plotSine(context, step, 50)
+    plotSine(context)
     context.restore()
 
-    step += 4 //частота
-
     window.requestAnimationFrame(draw)
-} var step = -4
+}
 
 
 function init() {
